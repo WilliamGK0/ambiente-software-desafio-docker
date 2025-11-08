@@ -26,20 +26,17 @@ gestao-academica/
 
 ## Como executar o projeto
 
-### 1 Clonar o repositório 
+1 Clonar o repositório 
 ```bash
 git clone https://github.com/SEU-USUARIO/ambiente-software-desafio-docker.git
 cd ambiente-software-desafio-docker 
 
-### 2 Subir os containers
+2 Subir os containers
 docker compose up --build
 
-### 3 Acessar a aplicação
+3 Acessar a aplicação
 http://localhost:5000
 
-### Deve aparecer a mensagem:
+Deve aparecer a mensagem:
 
 Gestão Acadêmica Simplificada – Ambiente inicial configurado com Docker Compose ✅
-
-### Exemplo da aplicação rodando
-![App rodando](imagens/print_app.png)
