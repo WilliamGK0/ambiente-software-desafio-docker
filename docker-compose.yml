@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=gestao_db
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - rede_local
+
+  web:
+    build: ./app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - rede_local
+
+volumes:
+  db_data:
+
+networks:
+  rede_local:
